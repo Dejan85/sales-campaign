@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://sales-campaign-fe.vercel.app"],
     credentials: true,
   })
 );
