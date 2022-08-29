@@ -1,7 +1,7 @@
 const { tryCatch } = require("../../../utils");
 
 const {
-  campaignsQueries: { getAll, getBySlug },
+  campaignsQueries: { getBySlug },
 } = require("../../../queries/campaigns");
 
 exports.isSlugExists = tryCatch(async (req) => {
