@@ -1,10 +1,16 @@
 const { tryCatch } = require("../../utils/index");
-const {
-  campaignsQueries: { getAll },
-} = require("../../queries/campaigns");
+// const {
+//   campaignsQueries: { getAll },
+// } = require("../../queries/campaigns");
+
+const { CampaignsModel } = require("../../models/campaigns.model");
 
 exports.getAll = tryCatch(async (req, res) => {
-  const campaigns = await getAll();
+  // const campaigns = await getAll();
+
+  const campaigns = await CampaignsModel.find({}, { created: 0, __v: 0 });
+
+  console.log("test campaigns", campaigns);
 
   if (!!campaigns?.length) {
     campaigns.forEach((campaign) => {
