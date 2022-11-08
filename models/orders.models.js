@@ -9,9 +9,9 @@ const ordersSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  address: {
+  phone: {
     type: String,
-    require: true,
+    required: true,
   },
   quantity: {
     type: Number,
@@ -24,7 +24,7 @@ const ordersSchema = new mongoose.Schema({
     type: Number,
   },
   message: {
-    type: Number,
+    type: String,
   },
   created: {
     type: Date,

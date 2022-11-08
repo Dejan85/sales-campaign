@@ -17,30 +17,74 @@ const campaignsSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  therapyAirSmartPrice: {
+  totalNumberOfReservations: {
+    type: String,
+    require: true,
+  },
+  currentDiscountLevel: {
+    type: String,
+    require: true,
+  },
+  validReservationsRequired: {
+    type: String,
+    require: true,
+  },
+  nextLevelOfDiscount: {
+    type: String,
+    require: true,
+  },
+
+  airSmartPrice: {
     type: Number,
     require: true,
   },
-  therapyAirSmartDiscountPrice: {
+  airSmartDiscountPrice: {
     type: Number,
     require: true,
   },
-  therapyAiriOnWhite: {
+  airSmartDiscountPercent: {
     type: Number,
     require: true,
   },
-  therapyAiriOnWhiteDiscountPrice: {
+  airSmartDevicesInStock: {
     type: Number,
     require: true,
   },
-  therapyAiriOnBlack: {
+
+  airiOnWhitePrice: {
     type: Number,
     require: true,
   },
-  therapyAiriOnBlackDiscountPrice: {
+  airiOnWhiteDiscountPrice: {
     type: Number,
     require: true,
   },
+  airiOnWhiteDiscountPercent: {
+    type: Number,
+    require: true,
+  },
+  airiOnWhiteDevicesInStock: {
+    type: Number,
+    require: true,
+  },
+
+  airiOnBlackPrice: {
+    type: Number,
+    require: true,
+  },
+  airiOnBlackDiscountPrice: {
+    type: Number,
+    require: true,
+  },
+  airiOnBlackDiscountPercent: {
+    type: Number,
+    require: true,
+  },
+  airiOnBlackDevicesInStock: {
+    type: Number,
+    require: true,
+  },
+
   created: {
     type: Date,
     default: Date.now,

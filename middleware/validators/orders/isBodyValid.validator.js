@@ -5,7 +5,6 @@ const schema = yup.object().shape({
   name: yup.string().required("Ime je obavezno"),
   phone: yup.string().required("Telefon je obavezan"),
   email: yup.string().required("Email je obavezan"),
-  address: yup.string().required("Adresa je obavezna"),
   // model: yup
   // 	.string()
   // 	.test('is-model-checked', 'Niste odabrali model', value => value !== 'nothingSelect')
