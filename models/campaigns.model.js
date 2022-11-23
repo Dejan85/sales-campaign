@@ -50,6 +50,10 @@ const campaignsSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  airSmartTotalNumberOfReservations: {
+    type: Number,
+    require: true,
+  },
 
   airiOnWhitePrice: {
     type: Number,
@@ -67,6 +71,10 @@ const campaignsSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  airiOnWhiteTotalNumberOfReservations: {
+    type: Number,
+    require: true,
+  },
 
   airiOnBlackPrice: {
     type: Number,
@@ -81,6 +89,10 @@ const campaignsSchema = new mongoose.Schema({
     require: true,
   },
   airiOnBlackDevicesInStock: {
+    type: Number,
+    require: true,
+  },
+  airiOnBlackTotalNumberOfReservations: {
     type: Number,
     require: true,
   },

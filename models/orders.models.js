@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const ordersSchema = new mongoose.Schema({
+  id: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -20,11 +24,18 @@ const ordersSchema = new mongoose.Schema({
   terms: {
     type: String,
   },
+  model: {
+    type: String,
+  },
   wishDiscount: {
     type: Number,
   },
   message: {
     type: String,
+  },
+  confirm: {
+    type: Boolean,
+    default: false,
   },
   created: {
     type: Date,

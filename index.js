@@ -37,5 +37,3 @@ mongoose
     )
   )
   .catch((err) => console.log("test", err.message));
-
-// mongoose.set("useFindAndModify", false);
