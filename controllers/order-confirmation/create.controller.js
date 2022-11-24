@@ -20,7 +20,7 @@ exports.create = tryCatch(async (req, res) => {
     from: process.env.USER,
     to: `${email}`,
     subject: "Verifikacioni email - Specijalna ponuda",
-    html: `<div> <p>Poštovani, u nastavku se nalazi link za potvrdu rezervacije ${model} ${quantity} uređaja.</p></br><p>Link za potvrdu rezervacije: http://localhost:1234/order-confirm.html?${id}</p></div>`,
+    html: `<div> <p>Poštovani, u nastavku se nalazi link za potvrdu rezervacije ${model} ${quantity} uređaja.</p></br><p>Link za potvrdu rezervacije: https://specijalna-ponuda.in.rs/order-confirm.html?${id}</p></div>`,
   };
 
   mailTransporter.sendMail(details, (err) => {
