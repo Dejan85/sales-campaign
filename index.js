@@ -8,21 +8,20 @@ const mongoose = require("mongoose");
 dotenv.config();
 const mongoURI = process.env.MONGO_URI;
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://sales-campaign-fe.vercel.app",
-      "http://127.0.0.1:5500",
-      "http://localhost:1234",
-      "http://specijalna-ponuda.in.rs",
-      "https://specijalna-ponuda.in.rs",
-      "https://specijalna-ponuda.in.rs/index.html",
-      "http://localhost:5500",
-    ],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "https://sales-campaign-fe.vercel.app",
+//       "http://specijalna-ponuda.in.rs",
+//       "https://specijalna-ponuda.in.rs",
+//       "https://specijalna-ponuda.in.rs/index.html",
+//       "http://localhost:5500",
+//     ],
+//     credentials: true,
+//   })
+// );
+
+app.use(cors());
 
 app.use(express.json({}));
 
