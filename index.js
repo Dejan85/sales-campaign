@@ -17,6 +17,8 @@ app.use(
       "http://localhost:1234",
       "http://specijalna-ponuda.in.rs",
       "https://specijalna-ponuda.in.rs",
+      "https://specijalna-ponuda.in.rs/index.html",
+      "http://localhost:5500/",
     ],
     credentials: true,
   })
