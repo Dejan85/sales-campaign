@@ -13,7 +13,7 @@ app.use(
     origin: [
       "https://specijalna-ponuda.in.rs",
       "https://sales-campaign-fe.vercel.app",
-      // "http://localhost:1234",
+      "http://localhost:9000",
       // "http://127.0.0.1:5173",
       // "http://127.0.0.1:5500",
     ],

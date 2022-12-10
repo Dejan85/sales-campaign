@@ -5,6 +5,9 @@ const ordersSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  slug: {
+    type: String,
+  },
   name: {
     type: String,
     required: true,

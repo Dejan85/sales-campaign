@@ -24,9 +24,6 @@ exports.create = tryCatch(async (req, res) => {
   };
 
   mailTransporter.sendMail(details, (err) => {
-    console.log("test details", details);
-    console.log("test mailTransporter", mailTransporter);
-
     if (err) {
       return console.log("test err", err);
     }
